@@ -22,9 +22,18 @@
   <script type="text/javascript"> new RDStationForms('tipo-de-plano-176ff9ef0f65132f5b99', null).createForm();</script>
 
   <!--webhook N8N-->
-  <script>
-  fetch('https://fofs.app.n8n.cloud/webhook-test/captura-email');
-  </script>
+ <script>
+  const email = document.getElementById('email')?.value;
 
+  if (email) {
+    fetch('https://fofs.app.n8n.cloud/webhook/captura-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ email })
+    });
+  }
+</script>
 </body>
 </html>
