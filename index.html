@@ -8,68 +8,62 @@
 
 <body>
   <h1>Obrigada por confirmar seu e-mail!</h1>
-  <p>preencha o campo e-mail e clique para ir direto pro simulado</p>
+  <p>Preencha o campo abaixo para acessar diretamente o simulado.</p>
 
-  <!-- RD Station Form 
-  
-  </script>
+  <!-- RD Station (desativado / apenas referência visual)
   <div role="main" id="tipo-de-plano-176ff9ef0f65132f5b99"></div>
-  <script type="text/javascript" 
-  src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
-  <script type="text/javascript"> new RDStationForms('tipo-de-plano-176ff9ef0f65132f5b99', null).createForm();</script>
+  <script src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+  <script>
+    new RDStationForms('tipo-de-plano-176ff9ef0f65132f5b99', null).createForm();
+  </script>
+  -->
 
--->
- <hr style="margin:40px 0">
+  <hr style="margin:40px 0">
 
-<h3>📩 Receber meu resultado do simulado</h3>
-<p>Informe seu e-mail para acessar o simulado e receber conteúdos personalizados.</p>
+  <h3>📩 Receber meu resultado do simulado</h3>
+  <p>Informe seu e-mail para acessar o simulado e receber conteúdos personalizados.</p>
 
-<form id="form-simulador">
-  <input
-    type="email"
-    id="emailSimulador"
-    placeholder="seu@email.com"
-    required
-    style="padding:10px; width:280px; max-width:100%;"
-  />
+  <form id="form-simulador">
+    <input
+      type="email"
+      id="emailSimulador"
+      placeholder="seu@email.com"
+      required
+      style="padding:10px; width:280px; max-width:100%;"
+    />
 
-  <br><br>
+    <br><br>
 
-  <button type="submit" style="padding:10px 18px; cursor:pointer;">
-    👉 Acessar o simulado
-  </button>
-</form>
+    <button type="submit" style="padding:10px 18px; cursor:pointer;">
+      👉 Acessar o simulado
+    </button>
+  </form>
 
+  <!-- Webhook N8N + Redirecionamento -->
+  <script>
+    document
+      .getElementById('form-simulador')
+      .addEventListener('submit', function (e) {
+        e.preventDefault();
 
-  <!--webhook N8N-->
- <script>
-  const email = document.getElementById('email')?.value;
+        const email = document.getElementById('emailSimulador').value;
 
-  if (email) {
-    fetch('https://fofs.app.n8n.cloud/webhook/captura-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ email })
-    });
-  }
-</script>
-<script>
-  document
-    .getElementById('form-simulador')
-    .addEventListener('submit', function (e) {
-      e.preventDefault();
+        if (!email) return;
 
-      const email = document.getElementById('emailSimulador').value;
+        // 🔹 Webhook 1 – captura do e-mail
+        fetch('https://fofs.app.n8n.cloud/webhook/captura-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ email })
+        });
 
-      if (!email) return;
-
-      // redireciona para a página do simulado
-      window.location.href =
-        'https://fabiola-fofs.github.io/simuladoPage/?email=' +
-        encodeURIComponent(email);
-    });
-</script>
+        // 🔹 Redireciona para o simulado
+        window.location.href =
+          'https://fabiola-fofs.github.io/simuladoPage/?email=' +
+          encodeURIComponent(email);
+      });
+  </script>
 </body>
 </html>
