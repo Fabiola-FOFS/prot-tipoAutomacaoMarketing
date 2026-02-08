@@ -1,207 +1,155 @@
-🔄 Fluxo de Automação – RD Station
+# 🔄 Fluxo de Automação – RD Station  
+**Captação e Nutrição de Leads | Setor de Planos de Saúde**
 
-Captação e Nutrição de Leads | Setor de Planos de Saúde
+---
 
-🎯 Objetivo do Fluxo
+## 🎯 Objetivo do Fluxo
 
-Captar leads interessados em planos de saúde
+Este fluxo de automação foi estruturado para simular um cenário real de **captação, nutrição e qualificação de leads** no setor de planos de saúde, priorizando eficiência operacional e organização dos dados.
 
-Responder rapidamente ao interesse do usuário
+Os principais objetivos são:
 
-Nutrir o lead com informações relevantes
+- Captar leads interessados em planos de saúde
+- Responder rapidamente ao interesse do usuário
+- Nutrir o lead com informações relevantes e educativas
+- Identificar leads com maior intenção de compra
+- Organizar e preparar os dados para o time comercial
 
-Identificar leads com maior intenção de compra
+📌 **Foco:** eficiência, organização e rastreabilidade — aspectos altamente valorizados no setor de saúde.
 
-Organizar dados para o time comercial
+---
 
-📌 Foco: eficiência, organização e rastreabilidade (muito valorizado no setor de saúde).
+## 🧩 Visão Geral do Fluxo
 
-🧩 Visão Geral do Fluxo
 Formulário preenchido
-        ↓
+↓
 E-mail automático de confirmação
-        ↓
+↓
 Lead entra em fluxo de nutrição
-        ↓
+↓
 Segmentação por interesse
-        ↓
+↓
+Identificação de engajamento
+↓
 Lead marcado como qualificado
-        ↓
+↓
 Envio para controle / time comercial
 
-🔹 Etapa 1 – Entrada do Fluxo (Gatilho)
-📥 Gatilho
+---
 
-Preenchimento de formulário em landing page
+## 🔹 Etapa 1 – Entrada do Fluxo (Gatilho)
 
-Exemplo de landing page:
+### 📥 Gatilho
+- Preenchimento de formulário em landing page
 
-“Simule seu plano de saúde”
+**Exemplo de landing page:**  
+> *“Simule seu plano de saúde”*
 
-“Solicite uma cotação personalizada”
+### 📝 Campos do Formulário
+- Nome
+- E-mail
+- Telefone
+- Tipo de plano de interesse:
+  - Individual
+  - Familiar
+  - Empresarial
 
-📝 Campos do formulário (realistas e responsáveis):
+---
 
-Nome
+## 🔹 Etapa 2 – E-mail Automático de Confirmação
 
-E-mail
+### ✉️ Ação
+- Envio automático de e-mail imediatamente após o preenchimento do formulário
 
-Telefone
+### 🎯 Objetivos
+- Confirmar o recebimento da solicitação
+- Criar confiança no processo
+- Reduzir a ansiedade do lead
 
-Tipo de plano de interesse:
+---
 
-Individual
+## 🔹 Etapa 3 – Inclusão em Fluxo de Nutrição
 
-Familiar
+### 🔄 Ação
+- Adicionar o lead a um fluxo curto de nutrição
 
-Empresarial
+### 🎯 Objetivo
+- Educar o lead antes do contato comercial
 
-📌 Evite excesso de dados sensíveis — isso mostra maturidade e atenção à LGPD.
+### 📚 Conteúdos Típicos (cenário realista)
 
-🔹 Etapa 2 – E-mail Automático de Confirmação
-✉️ Ação
+- **E-mail 1 (D+2)**  
+  *O que avaliar antes de contratar um plano de saúde*
 
-Enviar e-mail automaticamente após o preenchimento.
+- **E-mail 2 (D+4)**  
+  *Diferença entre planos individuais, familiares e empresariais*
 
-🎯 Objetivo
+- **E-mail 3 (D+6)**  
+  *Como funcionam carência e cobertura*
 
-Confirmar o recebimento
+---
 
-Criar confiança
+## 🔹 Etapa 4 – Segmentação por Interesse
 
-Reduzir ansiedade do lead
+### 🏷️ Ação
+- Aplicação de **tags ou campos personalizados** com base nas respostas do formulário
 
-📝 Exemplo de conteúdo:
+### 🎯 Exemplos de Segmentação
+- Interesse: Plano Individual
+- Interesse: Plano Familiar
+- Interesse: Plano Empresarial
 
-Olá, {{Nome}}
+📌 A segmentação é essencial para personalização de comunicação e análise de métricas.
 
-Recebemos sua solicitação de informações sobre planos de saúde.
-Em breve você receberá conteúdos que podem te ajudar a escolher a melhor opção.
+---
 
-Equipe [Empresa]
+## 🔹 Etapa 5 – Identificação de Engajamento
 
-📌 Empresas de saúde prezam por comunicação clara e não agressiva.
+### 📊 Regra Simples de Qualificação
+O lead é considerado engajado se:
 
-🔹 Etapa 3 – Inclusão em Fluxo de Nutrição
-🔄 Ação
+- Abriu pelo menos **1 e-mail**
+- **OU** clicou em algum link
+- **OU** visitou a página *“Planos”*
 
-Adicionar o lead a um fluxo de nutrição curto.
+### 🏷️ Ação
+- Aplicar a tag:  
+  **Lead Engajado**
 
-🎯 Objetivo
+📌 Esta etapa simula o início do conceito de **MQL (Marketing Qualified Lead)**.
 
-Educar o lead antes do contato comercial.
+---
 
-📚 Conteúdos típicos (realistas):
+## 🔹 Etapa 6 – Marcação de Lead Qualificado
 
-E-mail 1 (D+2):
-“O que avaliar antes de contratar um plano de saúde”
+### ✅ Critérios Simples (comuns em médias empresas)
+- Lead engajado
+- Interesse claramente definido
+- Dados de contato completos
 
-E-mail 2 (D+4):
-“Diferença entre planos individuais, familiares e empresariais”
+### 🏷️ Ação
+- Aplicar a tag:  
+  **Lead Qualificado – Marketing**
 
-E-mail 3 (D+6):
-“Como funciona carência e cobertura”
+---
 
-📌 Isso demonstra entendimento do funil e do setor.
+## 🔹 Etapa 7 – Integração / Saída do Fluxo
 
-🔹 Etapa 4 – Segmentação por Interesse
-🏷️ Ação
+### 🔄 Ação Final
+Após a qualificação, o lead pode ser direcionado para:
 
-Aplicar tag ou campo personalizado com base na resposta do formulário.
+- Controle em planilha
+- Integração via **n8n**
+- Fila de contato do time comercial
 
-🎯 Exemplos de segmentação:
+---
 
-Interesse: Plano Individual
+## 📊 Métricas Acompanhadas no RD Station
 
-Interesse: Plano Familiar
+- Número de leads captados
+- Taxa de abertura de e-mails
+- Taxa de cliques
+- Quantidade de leads engajados
+- Quantidade de leads qualificados
 
-Interesse: Plano Empresarial
-
-📌 Segmentação é essencial para personalização e métricas.
-
-🔹 Etapa 5 – Identificação de Engajamento
-📊 Regra simples de qualificação
-
-Abriu pelo menos 1 e-mail
-
-OU clicou em link
-
-OU visitou página “Planos”
-
-🏷️ Ação
-
-Adicionar tag:
-
-Lead Engajado
-
-📌 Isso simula o início de um MQL (Marketing Qualified Lead).
-
-🔹 Etapa 6 – Marcação de Lead Qualificado
-✅ Critério simples (realista para médias empresas):
-
-Lead engajado
-
-Interesse definido
-
-Dados de contato completos
-
-🏷️ Ação
-
-Adicionar tag:
-
-Lead Qualificado – Marketing
-
-📌 Não precisa complexidade excessiva — recrutadores gostam de clareza.
-
-🔹 Etapa 7 – Integração / Saída do Fluxo
-🔄 Ação final
-
-Lead é enviado para:
-
-Controle em planilha
-
-Integração via n8n
-
-Ou fila de contato comercial
-
-📌 Essa etapa conecta com o próximo passo do projeto (n8n).
-
-📊 Métricas Acompanhadas no RD Station
-
-Número de leads captados
-
-Taxa de abertura de e-mails
-
-Taxa de clique
-
-Leads engajados
-
-Leads qualificados
-
-📌 Essas métricas são comuns em empresas do setor.
-
-🔐 Considerações de Boas Práticas (Saúde)
-
-Coleta mínima de dados
-
-Comunicação clara e ética
-
-Sem linguagem sensacionalista
-
-Respeito ao tempo do lead
-
-💡 Esse cuidado é MUITO valorizado em empresas de planos de saúde.
-
-⭐ Por que esse fluxo é forte para seu portfólio?
-
-Porque ele mostra que você:
-
-Entende funil de marketing
-
-Sabe usar automação com propósito
-
-Pensa em dados e métricas
-
-Conhece o contexto do setor de saúde
-
-Constrói fluxos simples e eficientes
+---
