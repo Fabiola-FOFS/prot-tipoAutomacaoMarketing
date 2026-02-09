@@ -18,7 +18,7 @@ Os principais objetivos são:
 📌 **Foco:** eficiência, organização e rastreabilidade — aspectos altamente valorizados no setor de saúde.
 
 ---
-
+![alt text](<../prints/fluxo de automacao RD.png>)
 ## 🧩 Visão Geral do Fluxo
 
 Formulário preenchido
@@ -41,7 +41,7 @@ Envio para controle / time comercial
 
 ### 📥 Gatilho
 - Preenchimento de formulário em landing page
-
+ ![alt text](<../prints/formulario rd capta dados .png>)
 **Exemplo de landing page:**  
 > *“Simule seu plano de saúde”*
 
@@ -54,7 +54,11 @@ Envio para controle / time comercial
   - Familiar
   - Empresarial
 
----
+![alt text](<../prints/botão de confirmação formulario Rd -- SEGMENTAR PERFIL .png>)
+--- 
+Esta etapa foi substituida por um formulário próprio, devido a que o tempo de uso gratuito do Rd esgotou, assim criei um botão (para segmentar n N8N) - 
+ ### botão final:
+ ![alt text](<../prints/captação de e-mail propro .png>)
 
 ## 🔹 Etapa 2 – E-mail Automático de Confirmação
 
@@ -71,12 +75,12 @@ Envio para controle / time comercial
 ## 🔹 Etapa 3 – Inclusão em Fluxo de Nutrição
 
 ### 🔄 Ação
-- Adicionar o lead a um fluxo curto de nutrição
+- Adicionar o lead a um fluxo curto de nutrição 
 
 ### 🎯 Objetivo
 - Educar o lead antes do contato comercial
 
-### 📚 Conteúdos Típicos (cenário realista)
+### 📚 Conteúdos Típicos (e-mails que poderiam ser enviados pelo fluxo)
 
 - **E-mail 1 (D+2)**  
   *O que avaliar antes de contratar um plano de saúde*
@@ -100,7 +104,7 @@ Envio para controle / time comercial
 - Interesse: Plano Empresarial
 
 📌 A segmentação é essencial para personalização de comunicação e análise de métricas.
-
+- a ideia era captar isso pelo Rd- por fim tentei pelo N8N (ainda testando possibilidades)
 ---
 
 ## 🔹 Etapa 5 – Identificação de Engajamento
@@ -144,7 +148,7 @@ Após a qualificação, o lead pode ser direcionado para:
 
 ---
 
-## 📊 Métricas Acompanhadas no RD Station
+## 📊 Métricas Acompanhadas no RD Station 
 
 - Número de leads captados
 - Taxa de abertura de e-mails
