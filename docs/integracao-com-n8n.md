@@ -10,12 +10,9 @@ print 2 fluxo 2 : dados captados vão para planilha
 
 Formulário de confirmação (email)
         ↓
-Webhook 1 (email)
-        ↓
 Simulado (resultado.html?perfil=...)
         ↓
-Webhook 2 (perfil)
-        ↓
-Merge (junta email + perfil)
+Webhook 2 (perfil + email)
         ↓
 Google Sheets (salva linha)
+![alt text](<../prints/fluxo 2 n8n.png>)
