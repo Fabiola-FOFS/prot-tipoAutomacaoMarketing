@@ -1,4 +1,4 @@
-# 🚀 Protótipo de Automação de Marketing – Captação e Segmentação de Leads
+#  Protótipo de Automação de Marketing – Captação e Segmentação de Leads
 
 Este repositório documenta um **protótipo funcional de automação de marketing**, desenvolvido com foco em **captação, segmentação e rastreabilidade de leads**, integrando **WordPress**, **HTML estático (GitHub Pages)**, **n8n** e **Google Sheets**.
 
@@ -175,5 +175,5 @@ SEO técnico + eventos de conversão
 👩‍💻 Autora
 
 Fabiola Oliveira
-Estudante de Análise e Desenvolvimento de Sistemas
-Foco em Qualidade, Automação, Processos e Marketing Digital
+Análista e Desenvolvedora de Sistemas
+Foco em Qualidade, Automação, Processos e Marketing web
